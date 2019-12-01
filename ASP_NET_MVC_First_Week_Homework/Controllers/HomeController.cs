@@ -26,5 +26,12 @@ namespace ASP_NET_MVC_First_Week_Homework.Controllers
 
             return View();
         }
+
+        public ActionResult Homework()
+        {
+            ViewBag.Message = "It's Homework";
+
+            return View();
+        }
     }
 }
