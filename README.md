@@ -1,3 +1,0 @@
-# ASP_NET_MVC_First_Week_homework
-ASP_NET_MVC_First_Week_homework
-20191201 initial version
