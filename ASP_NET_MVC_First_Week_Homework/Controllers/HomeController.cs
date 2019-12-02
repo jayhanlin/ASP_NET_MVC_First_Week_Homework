@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ASP_NET_MVC_First_Week_Homework.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -29,8 +30,10 @@ namespace ASP_NET_MVC_First_Week_Homework.Controllers
 
         public ActionResult Homework()
         {
-            ViewBag.Message = "It's Homework";
-
+            //TODO
+            //隨機產生在這
+            var qwe = new daily_money_logViewModel();
+            qwe.SerialNumber = 
             return View();
         }
     }

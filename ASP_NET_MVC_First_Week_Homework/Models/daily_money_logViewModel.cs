@@ -12,4 +12,6 @@ namespace ASP_NET_MVC_First_Week_Homework.Models
         public DateTime date { get; set; }
         public int money { get; set; }
     }
+
+    public 
 }
