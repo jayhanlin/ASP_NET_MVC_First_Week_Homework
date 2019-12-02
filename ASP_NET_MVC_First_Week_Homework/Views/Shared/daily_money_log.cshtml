@@ -3,7 +3,7 @@
 
 <div class="row">
     <div class="col-md-12">
-        <table class="table table-bordered table-hover">
+        <table class="table table-bordered table-hover" data-pagination="true" data-page-size="2">
             <thead>
                 <tr>
                     <th>#</th>
@@ -14,12 +14,12 @@
 
             </thead>
             <tbody>
-                @*<tr>
-                    <th class=" col-xs-1">#</th>
-                    <th class=" col-xs-1">類別</th>
-                    <th class=" col-xs-1">日期</th>
-                    <th class=" col-xs-1">金額</th>
-                </tr>*@
+                <tr>
+                    <th class=" col-xs-1">@Model.SerialNumber</th>
+                    <th class=" col-xs-1">@Model.type</th>
+                    <th class=" col-xs-1">@Model.date</th>
+                    <th class=" col-xs-1">@Model.Amount</th>
+                </tr>
             </tbody>
         </table>
     </div>
