@@ -33,7 +33,7 @@ namespace ASP_NET_MVC_First_Week_Homework.Controllers
             //TODO
             //隨機產生在這           
             //List SNList= new List<SerialNumber>
-            var result = new List<daily_money_logViewModel>();
+            var result = new List<dailymoneylogViewModel>();
             #region 亂數設定
             var random = new Random();
             #endregion
@@ -44,22 +44,28 @@ namespace ASP_NET_MVC_First_Week_Homework.Controllers
                 int range = (DateTime.Today - start).Days;
                 return start.AddDays(random.Next(range));
             }
-
             #endregion
-            for (int i = 0; i < 100; i++)
+            for (int i = 1; i < 101; i++)
             {
-                var randomNum = random.Next(0, 1000);
-                foreach (var item in result)
+                var randomNum = random.Next(0, 10000);
+                result.Add(new dailymoneylogViewModel
                 {
-
-                    item.SerialNumber = (i % 20 != 0) ? i & 20 : 20;
-                    item.type = randomNum > 500 ? "收入" : "支出";
-                    item.date = RandomDay();
-                    item.Amount = randomNum;
-                    result.Add(item);
-                }
-
+                    //SerialNumber = (i %20>0 ) ? i % 20 : 20,
+                    type = randomNum > 5000 ? "收入" : "支出",
+                    date = RandomDay(),//格式化
+                    Amount = randomNum//格式化
+                });
+                //foreach (var item in result)
+                //{
+                //    item.SerialNumber = (i % 20 != 0) ? i & 20 : 20;
+                //    item.type = randomNum > 500 ? "收入" : "支出";
+                //    item.date = RandomDay();
+                //    item.Amount = randomNum;
+                //    result.Add(item);
+                //}
             }
+            result = result.OrderByDescending(x => x.date).ToList();
+
             return View(result);
         }
     }
