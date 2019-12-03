@@ -75,3 +75,12 @@ _[Ss]cripts
 *.dot[Cc]over
 .vs/ASP_NET_MVC_First_Week_Homework/v15/.suo
 .vs/ASP_NET_MVC_First_Week_Homework/v15/.suo
+.vs/ASP_NET_MVC_First_Week_Homework/v15/.suo
+*.ide-shm
+.vs/config/applicationhost.config
+*.dll
+*.pdb
+*.cache
+*.dll
+*.pdb
+*.cache
