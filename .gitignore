@@ -84,3 +84,6 @@ _[Ss]cripts
 *.dll
 *.pdb
 *.cache
+*.ide-shm
+.vs/ASP_NET_MVC_First_Week_Homework/v15/.suo
+.vs/ASP_NET_MVC_First_Week_Homework/v15/Server/sqlite3/storage.ide-shm
