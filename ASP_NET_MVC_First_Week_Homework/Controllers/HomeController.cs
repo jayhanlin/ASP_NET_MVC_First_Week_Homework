@@ -34,22 +34,32 @@ namespace ASP_NET_MVC_First_Week_Homework.Controllers
             //隨機產生在這           
             //List SNList= new List<SerialNumber>
             var result = new List<daily_money_logViewModel>();
-            //for (int i =0; i < 100; i++)
-            //{
-                
-            //    result.Add()
-            //    result.SerialNumber = i % 20;
-            //    result.type = "good";
-            //    result.date = DateTime.Now;
-            //    result.Amount = 100;
-            //}
-            ////result.date = DateTime.Now;
-            //result.SerialNumber = 5;
-            //var random = new Random(Guid.NewGuid().GetHashCode());
-            //result.type = random.Next(,99999) > 0.5 ? "支出" : "收入"; 
-            //result.Amount = 5000;
+            #region 亂數設定
+            var random = new Random();
+            #endregion
+            #region 時間亂數設定
+            DateTime RandomDay()
+            {
+                DateTime start = new DateTime(1995, 1, 1);
+                int range = (DateTime.Today - start).Days;
+                return start.AddDays(random.Next(range));
+            }
 
+            #endregion
+            for (int i = 0; i < 100; i++)
+            {
+                var randomNum = random.Next(0, 1000);
+                foreach (var item in result)
+                {
 
+                    item.SerialNumber = (i % 20 != 0) ? i & 20 : 20;
+                    item.type = randomNum > 500 ? "收入" : "支出";
+                    item.date = RandomDay();
+                    item.Amount = randomNum;
+                    result.Add(item);
+                }
+
+            }
             return View(result);
         }
     }
