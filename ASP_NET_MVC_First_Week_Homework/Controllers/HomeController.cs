@@ -1,4 +1,5 @@
 ﻿using ASP_NET_MVC_First_Week_Homework.Models;
+using Homework.Repository.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,42 +31,23 @@ namespace ASP_NET_MVC_First_Week_Homework.Controllers
 
         public ActionResult Homework()
         {
-            //TODO
-            //隨機產生在這           
-            //List SNList= new List<SerialNumber>
-            var result = new List<dailymoneylogViewModel>();
-            #region 亂數設定
-            var random = new Random();
-            #endregion
-            #region 時間亂數設定
-            DateTime RandomDay()
-            {
-                DateTime start = new DateTime(1995, 1, 1);
-                int range = (DateTime.Today - start).Days;
-                return start.AddDays(random.Next(range));
-            }
-            #endregion
-            for (int i = 1; i < 101; i++)
-            {
-                var randomNum = random.Next(0, 10000);
-                result.Add(new dailymoneylogViewModel
-                {
-                    //SerialNumber = (i %20>0 ) ? i % 20 : 20,
-                    type = randomNum > 5000 ? "收入" : "支出",
-                    date = RandomDay(),//格式化
-                    Amount = randomNum//格式化
-                });
-                //foreach (var item in result)
-                //{
-                //    item.SerialNumber = (i % 20 != 0) ? i & 20 : 20;
-                //    item.type = randomNum > 500 ? "收入" : "支出";
-                //    item.date = RandomDay();
-                //    item.Amount = randomNum;
-                //    result.Add(item);
-                //}
-            }
-            result = result.OrderByDescending(x => x.date).ToList();
 
+            var result = new List<dailymoneylogViewModel>();
+
+            using (var Srv = new AccountBookService())
+            {
+                var query = Srv.GetDataAll().ToList();
+                int i = 1;
+                foreach (var item in query)
+                {
+                    result.Add(new dailymoneylogViewModel(item)
+                    {
+                        SerialNumber = i
+                    });
+                    i++;
+                }
+            }
+            result = result.OrderByDescending(x => x.Date).ToList();
             return View(result);
         }
     }

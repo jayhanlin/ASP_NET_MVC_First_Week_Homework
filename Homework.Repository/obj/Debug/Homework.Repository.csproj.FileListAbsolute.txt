@@ -1,0 +1,15 @@
+D:\Class\ASP.NET_MVC_實戰訓練營_精華版\MVC實作\ASP_NET_MVC_First_Week_Homework\Homework.Repository\bin\Debug\SkillTreeHomework.mdf
+D:\Class\ASP.NET_MVC_實戰訓練營_精華版\MVC實作\ASP_NET_MVC_First_Week_Homework\Homework.Repository\bin\Debug\SkillTreeHomework_log.ldf
+D:\Class\ASP.NET_MVC_實戰訓練營_精華版\MVC實作\ASP_NET_MVC_First_Week_Homework\Homework.Repository\bin\Debug\Homework.Repository.dll.config
+D:\Class\ASP.NET_MVC_實戰訓練營_精華版\MVC實作\ASP_NET_MVC_First_Week_Homework\Homework.Repository\bin\Debug\Homework.Repository.dll
+D:\Class\ASP.NET_MVC_實戰訓練營_精華版\MVC實作\ASP_NET_MVC_First_Week_Homework\Homework.Repository\bin\Debug\Homework.Repository.pdb
+D:\Class\ASP.NET_MVC_實戰訓練營_精華版\MVC實作\ASP_NET_MVC_First_Week_Homework\Homework.Repository\bin\Debug\EntityFramework.dll
+D:\Class\ASP.NET_MVC_實戰訓練營_精華版\MVC實作\ASP_NET_MVC_First_Week_Homework\Homework.Repository\bin\Debug\EntityFramework.SqlServer.dll
+D:\Class\ASP.NET_MVC_實戰訓練營_精華版\MVC實作\ASP_NET_MVC_First_Week_Homework\Homework.Repository\bin\Debug\EntityFramework.xml
+D:\Class\ASP.NET_MVC_實戰訓練營_精華版\MVC實作\ASP_NET_MVC_First_Week_Homework\Homework.Repository\bin\Debug\EntityFramework.SqlServer.xml
+D:\Class\ASP.NET_MVC_實戰訓練營_精華版\MVC實作\ASP_NET_MVC_First_Week_Homework\Homework.Repository\bin\Debug\zh-Hant\EntityFramework.resources.dll
+D:\Class\ASP.NET_MVC_實戰訓練營_精華版\MVC實作\ASP_NET_MVC_First_Week_Homework\Homework.Repository\obj\Debug\Homework.Repository.csprojAssemblyReference.cache
+D:\Class\ASP.NET_MVC_實戰訓練營_精華版\MVC實作\ASP_NET_MVC_First_Week_Homework\Homework.Repository\obj\Debug\Homework.Repository.csproj.CoreCompileInputs.cache
+D:\Class\ASP.NET_MVC_實戰訓練營_精華版\MVC實作\ASP_NET_MVC_First_Week_Homework\Homework.Repository\obj\Debug\Homework.Repository.csproj.CopyComplete
+D:\Class\ASP.NET_MVC_實戰訓練營_精華版\MVC實作\ASP_NET_MVC_First_Week_Homework\Homework.Repository\obj\Debug\Homework.Repository.dll
+D:\Class\ASP.NET_MVC_實戰訓練營_精華版\MVC實作\ASP_NET_MVC_First_Week_Homework\Homework.Repository\obj\Debug\Homework.Repository.pdb
