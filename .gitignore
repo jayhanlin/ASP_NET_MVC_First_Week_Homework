@@ -7,3 +7,4 @@
 ASP_NET_MVC_First_Week_Homework/bin/ASP_NET_MVC_First_Week_Homework.dll
 *.dll
 ASP_NET_MVC_First_Week_Homework/obj/Debug/ASP_NET_MVC_First_Week_Homework.csproj.CoreCompileInputs.cache
+*.config
